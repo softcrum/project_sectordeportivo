@@ -136,6 +136,14 @@ ul {
 
 // Component styles are injected through grunt
 // injector
+@import 'about/contact_us/contact_us.scss';
+@import 'about/culture/culture.scss';
+@import 'about/index/index.scss';
+@import 'about/jobs/jobs.scss';
+@import 'about/philosophy/philosophy.scss';
+@import 'about/press/press.scss';
+@import 'about/team/team.scss';
+@import 'about/version/version.scss';
 @import 'admin/admin.scss';
 @import 'main/main.scss';
 @import '../components/footer/footer.scss';

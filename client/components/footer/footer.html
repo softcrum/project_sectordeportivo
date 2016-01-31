@@ -37,6 +37,21 @@
               {{ 'footer.philosophy' | translate }}
             </a>
           </li>
+          <li>
+            <a ui-sref="AboutPress">
+              {{ 'footer.press' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="AboutJobs">
+              {{ 'footer.jobs' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="AboutVersion">
+              {{ 'footer.version' | translate }}
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -68,22 +83,22 @@
             </a>
           </li>
         </ul>
-        <ul id="contacts_footer">
+        <ul>
           <li>
             {{ 'footer.address' | translate }}:
-            <a href="{{ app.company.address.point }}" target="_blank">
+            <a class="footer__menu-detail" href="{{ app.company.address.point }}" target="_blank">
               {{ app.company.address.format }}
             </a>
           </li>
           <li>
             {{ 'footer.phone' | translate }}:
-            <a href="tel://{{ app.company.phone.call }}">
+            <a class="footer__menu-detail" href="tel://{{ app.company.phone.call }}">
               {{ app.company.phone.format }}
             </a>
           </li>
           <li>
             {{ 'footer.email' | translate }}:
-            <a ui-sref="AboutContactUs">{{ app.company.email.contact }}</a>
+            <a class="footer__menu-detail" ui-sref="AboutContactUs">{{ app.company.email.contact }}</a>
           </li>
         </ul>
       </div>

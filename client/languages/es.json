@@ -5,11 +5,14 @@
   "footer.company": "Nuestra empresa",
   "footer.contact_agent": "Contactar a un ejecutivo",
   "footer.contact_us": "Contáctenos",
-  "footer.culture": "Cultura empresarial",
+  "footer.culture": "Cultura social",
   "footer.developed": "Un producto de ",
   "footer.email": "Correo electrónico",
   "footer.help": "Centro de ayuda",
-  "footer.philosophy": "Filosofía de trabajo",
+  "footer.jobs": "Trabaje con nosotros",
+  "footer.philosophy": "Filosofía empresarial",
   "footer.phone": "Teléfono",
-  "footer.team": "Equipo de trabajo"
+  "footer.press": "Prensa y reconocimientos",
+  "footer.team": "Equipo de trabajo",
+  "footer.version": "Versión de la aplicación"
 }
