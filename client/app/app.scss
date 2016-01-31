@@ -1,8 +1,127 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-@import '../bower_components/bootstrap-social/bootstrap-social.scss';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
+
+html {
+  cursor: default;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.layout-max-width {
+  margin: 0 auto;
+  width: 1170px;
+}
+@media (max-width: 1200px) {
+  .layout-max-width {
+    width: 994px;
+  }
+}
+@media (max-width: 1024px) {
+  .layout-max-width {
+    margin: 0 15px;
+    width: initial;
+  }
+}
+@media (max-width: 667px) {
+  .layout-max-width {
+    margin: 0 10px;
+    width: initial;
+  }
+}
+
+// Import Fonts
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-light-webfont.eot');
+  src: url('../assets/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-light-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-light-webfont.woff') format('woff'), url('../assets/fonts/proximanova-light-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-lightitalic-webfont.eot');
+  src: url('../assets/fonts/proximanova-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-lightitalic-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-lightitalic-webfont.woff') format('woff'), url('../assets/fonts/proximanova-lightitalic-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-lightitalic-webfont.svg#proxima_novalight_italic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-regular-webfont.eot');
+  src: url('../assets/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-regular-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-regular-webfont.woff') format('woff'), url('../assets/fonts/proximanova-regular-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-regularitalic-webfont.eot');
+  src: url('../assets/fonts/proximanova-regularitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-regularitalic-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-regularitalic-webfont.woff') format('woff'), url('../assets/fonts/proximanova-regularitalic-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-regularitalic-webfont.svg#proxima_novaregular_italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-semibold-webfont.eot');
+  src: url('../assets/fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-semibold-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-semibold-webfont.woff') format('woff'), url('../assets/fonts/proximanova-semibold-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-semibolditalic-webfont.eot');
+  src: url('../assets/fonts/proximanova-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-semibolditalic-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-semibolditalic-webfont.woff') format('woff'), url('../assets/fonts/proximanova-semibolditalic-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-semibolditalic-webfont.svg#proxima_novasemibold_italic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-bold-webfont.eot');
+  src: url('../assets/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-bold-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-bold-webfont.woff') format('woff'), url('../assets/fonts/proximanova-bold-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../assets/fonts/proximanova-boldit-webfont.eot');
+  src: url('../assets/fonts/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/proximanova-boldit-webfont.woff2') format('woff2'), url('../assets/fonts/proximanova-boldit-webfont.woff') format('woff'), url('../assets/fonts/proximanova-boldit-webfont.ttf') format('truetype'), url('../assets/fonts/proximanova-boldit-webfont.svg#proxima_nova_rgbold_italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
 
 /**
  * App-wide Styles
@@ -17,7 +136,9 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 // Component styles are injected through grunt
 // injector
-@import 'account/login/login.scss';
 @import 'admin/admin.scss';
 @import 'main/main.scss';
+@import '../components/footer/footer.scss';
+@import '../components/modal/modal.scss';
+@import '../components/oauth-buttons/oauth-buttons.scss';
 // endinjector

@@ -3,10 +3,9 @@
 angular.module('projectSectordeportivoApp')
   .directive('footer', function () {
     return {
-      templateUrl: 'components/footer/footer.html',
+      controller: 'FooterController',
+      controllerAs: 'footerCtrl',
       restrict: 'E',
-      link: function(scope, element) {
-        element.addClass('footer');
-      }
+      templateUrl: 'components/footer/footer.html'
     };
   });

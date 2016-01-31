@@ -1,6 +1,97 @@
-<div class="container">
-  <p>Angular Fullstack v3.2.0 |
-    <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-    <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a>
-  </p>
-</div>
+<section class="footer" layout="column" ng-controller="FooterController">
+  <div class="layout-max-width">
+    <div layout="row" layout-wrap>
+      <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25">
+        <p class="footer__menu-logo">
+          <a ui-sref="HomeIndex">
+            <img src="assets/images/logo.png" data-retina="true" alt="{{ app.settings.name }}">
+          </a>
+        </p>
+        <p class="footer__menu-developed">
+          {{ 'footer.developed' | translate }}
+          <a href="http://www.softcrum.com" target="_blank">Softcrum Company</a>
+        </p>
+      </div>
+      <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25">
+        <div class="footer__menu-title">
+          {{ 'footer.about' | translate }}
+        </div>
+        <ul>
+          <li>
+            <a ui-sref="AboutIndex">
+              {{ 'footer.company' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="AboutTeam">
+              {{ 'footer.team' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="AboutCulture">
+              {{ 'footer.culture' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="AboutPhilosophy">
+              {{ 'footer.philosophy' | translate }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25" hide-xs>
+        <div class="footer__menu-title">
+          {{ 'footer.help' | translate }}
+        </div>
+        <ul>
+          <li ng-click="appChangeLanguage('es')"><a href="#">Español</a></li>
+          <li ng-click="appChangeLanguage('en')"><a href="#">Inglés</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Students</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25">
+        <div class="footer__menu-title">
+          {{ 'footer.contact_us' | translate }}
+        </div>
+        <ul>
+          <li>
+            <a ui-sref="AboutContactUs">
+              {{ 'footer.contact_agent' | translate }}
+            </a>
+          </li>
+        </ul>
+        <ul id="contacts_footer">
+          <li>
+            {{ 'footer.address' | translate }}:
+            <a href="{{ app.company.address.point }}" target="_blank">
+              {{ app.company.address.format }}
+            </a>
+          </li>
+          <li>
+            {{ 'footer.phone' | translate }}:
+            <a href="tel://{{ app.company.phone.call }}">
+              {{ app.company.phone.format }}
+            </a>
+          </li>
+          <li>
+            {{ 'footer.email' | translate }}:
+            <a ui-sref="AboutContactUs">{{ app.company.email.contact }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copy">
+    <div class="layout-max-width">
+      © {{ app.settings.name }} {{ footerCtrl.date }} - {{ 'footer.all_rights_reserved' | translate }}
+    </div>
+  </div>
+</section>

@@ -1,6 +1,60 @@
-footer.footer {
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 70px;
-  border-top: 1px solid #E5E5E5;
+.footer {
+  background-color: #283842;
+  color: #fff;
+  font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+  padding: 50px 0 0;
+  &__copy {
+    background-color: #223038;
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 20px 0 0;
+    padding: 15px;
+    text-align: center;
+  }
+  &__menu {
+    padding: 0 15px 20px;
+    &-developed {
+      font-size: 14px;
+      font-weight: 300;
+      padding: 15px 0 0;
+      a {
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+    &-logo {
+      max-width: 150px;
+      img {
+        width: 100%;
+      }
+    }
+    &-title {
+      border-bottom: 1px solid #555;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+      padding: 0 0 10px;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style: none;
+      padding: 10px 0;
+      li {
+        font-weight: 300;
+        line-height: 22px;
+        a {
+          color: #fff;
+          display: block;
+          font-size: 15px;
+          opacity: 0.6;
+          text-decoration: none;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
