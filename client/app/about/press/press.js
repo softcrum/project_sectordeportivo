@@ -6,6 +6,6 @@ angular.module('projectSectordeportivoApp')
       .state('AboutPress', {
         controller: 'AboutPressCtrl',
         templateUrl: 'app/about/press/press.html',
-        url: '/aboutpress'
+        url: '/about/press'
       });
   });
