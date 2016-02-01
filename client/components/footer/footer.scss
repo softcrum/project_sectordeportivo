@@ -61,3 +61,13 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+    &__menu {
+      &-logo {
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@
           <a href="http://www.softcrum.com" target="_blank">Softcrum Company</a>
         </p>
       </div>
-      <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25">
+      <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25" hide-xs>
         <div class="footer__menu-title">
           {{ 'footer.about' | translate }}
         </div>
@@ -54,24 +54,43 @@
           </li>
         </ul>
       </div>
-
-
-
       <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25" hide-xs>
         <div class="footer__menu-title">
-          {{ 'footer.help' | translate }}
+          {{ 'footer.resources' | translate }}
         </div>
         <ul>
-          <li ng-click="appChangeLanguage('es')"><a href="#">Español</a></li>
-          <li ng-click="appChangeLanguage('en')"><a href="#">Inglés</a></li>
-          <li><a href="#">Admissions</a></li>
-          <li><a href="#">Staff</a></li>
-          <li><a href="#">Students</a></li>
+          <li>
+            <a ui-sref="HelpIndex">
+              {{ 'footer.help' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="HelpFaqs">
+              {{ 'footer.faqs' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="LegalIndex">
+              {{ 'footer.legal' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="LegalTerms">
+              {{ 'footer.terms' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="LegalPrivacy">
+              {{ 'footer.privacy' | translate }}
+            </a>
+          </li>
+          <li>
+            <a ui-sref="LegalCookies">
+              {{ 'footer.cookies' | translate }}
+            </a>
+          </li>
         </ul>
       </div>
-
-
-
       <div class="footer__menu" flex="100" flex-gt-xs="50" flex-gt-sm="25">
         <div class="footer__menu-title">
           {{ 'footer.contact_us' | translate }}
